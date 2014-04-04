@@ -37,3 +37,16 @@ set background=dark
 let g:solarized_visibility = "high"
 let g:solarized_contrast = "high"
 colorscheme solarized
+
+" custom window movements
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" custom <shift> + : => ;
+noremap ; :
+
+" custom non-sudo save
+let mapleader=","
+noremap <Leader>w :w !sudo tee % > /dev/null
